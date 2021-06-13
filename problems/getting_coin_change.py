@@ -10,6 +10,7 @@ print(recursion_limit)
 recursion_limit = sys.setrecursionlimit(5000)
 print(sys.getrecursionlimit())
 
+
 ############------------ FUNCTIONS ------------############
 def change(amount):
     '''
@@ -76,7 +77,7 @@ if __name__ == '__main__':
     # test_case_3()
     # Something went wrong
 
-    # test_case_4()
+    test_case_4()
     # Something went wrong
 
     
