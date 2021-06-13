@@ -3,13 +3,16 @@ import sys
 
 
 ############------------ GLOBAL VARIABLES ------------############
-recursion_limit = sys.getrecursionlimit()
-print(recursion_limit)
+# recursion_limit = sys.getrecursionlimit()
+# print(recursion_limit)
 # 1000
 
-recursion_limit = sys.setrecursionlimit(5000)
-print(sys.getrecursionlimit())
-
+#---> recursion_limit = sys.setrecursionlimit(10**60)
+#---> OverflowError: Python int too large to convert to C int
+# this ^ is because of this: 
+# https://stackoverflow.com/questions/38314118/overflowerror-python-int-too-large-to-convert-to-c-long-on-windows-but-not-ma
+print(sys.maxsize)
+# 9223372036854775807
 
 ############------------ FUNCTIONS ------------############
 def change(amount):
@@ -20,6 +23,7 @@ def change(amount):
      are only at values 3 & 5
     '''
     assert(amount >= 8)
+
     if amount == 8:
         return [3, 5]
     if amount == 9:
@@ -58,7 +62,8 @@ def test_case_3():
 
 
 def test_case_4():
-    amount =  2999
+    # amount =  2999
+    amount =  100999
     try:
         print(change(amount))
     except:
@@ -77,7 +82,7 @@ if __name__ == '__main__':
     # test_case_3()
     # Something went wrong
 
-    test_case_4()
+    # test_case_4()
     # Something went wrong
 
     
