@@ -5,6 +5,7 @@ import sys
 ############------------ GLOBAL VARIABLES ------------############
 recursion_limit = sys.getrecursionlimit()
 print(recursion_limit)
+# 1000
 
 
 ############------------ FUNCTIONS ------------############
@@ -54,7 +55,7 @@ def test_case_3():
 
 
 def test_case_4():
-    n =  10000
+    n =  2999
     try:
         print(change(n))
     except:
@@ -73,7 +74,7 @@ if __name__ == '__main__':
     # test_case_3()
     # Something went wrong
 
-    # test_case_4()
+    test_case_4()
     # Something went wrong
 
     
