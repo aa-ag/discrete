@@ -7,6 +7,8 @@ recursion_limit = sys.getrecursionlimit()
 print(recursion_limit)
 # 1000
 
+recursion_limit = sys.setrecursionlimit(5000)
+print(sys.getrecursionlimit())
 
 ############------------ FUNCTIONS ------------############
 def change(amount):
@@ -31,33 +33,33 @@ def change(amount):
 
 ############------------ TESTS ------------############
 def test_case_1():
-    n =  11
+    amount =  11
     try:
-        print(change(n))
+        print(change(amount))
     except:
         print("Something went wrong")
 
 
 def test_case_2():
-    n =  999
+    amount =  999
     try:
-        print(change(n))
+        print(change(amount))
     except:
         print("Something went wrong")
 
 
 def test_case_3():
-    n =  5
+    amount =  5
     try:
-        print(change(n))
+        print(change(amount))
     except:
         print("Something went wrong")
 
 
 def test_case_4():
-    n =  2999
+    amount =  2999
     try:
-        print(change(n))
+        print(change(amount))
     except:
         print("Something went wrong")
 
@@ -74,7 +76,7 @@ if __name__ == '__main__':
     # test_case_3()
     # Something went wrong
 
-    test_case_4()
+    # test_case_4()
     # Something went wrong
 
     
