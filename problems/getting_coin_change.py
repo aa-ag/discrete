@@ -1,5 +1,11 @@
 ############------------ FUNCTIONS ------------############
 def change(amount):
+    '''
+     for amounts larger than 8
+     returns how to pay for it with exact change
+     in a hypothetical place where coins
+     are only at values 3 & 5
+    '''
     assert(amount >= 8)
     if amount == 8:
         return [3, 5]
@@ -16,3 +22,5 @@ def change(amount):
 ############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
     print(change(11))
+    # [3, 5, 3]
+    
