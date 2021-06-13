@@ -19,8 +19,29 @@ def change(amount):
     return coins
 
 
+############------------ TESTS ------------############
+def test_case_1():
+    n =  11
+    try:
+        print(change(n))
+    except:
+        print("Something went wrong")
+
+
+def test_case_2():
+    n =  999
+    try:
+        print(change(n))
+    except:
+        print("Something went wrong")
+
+
 ############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
-    print(change(11))
+    test_case_1()
     # [3, 5, 3]
-    
+
+    test_case_2()
+    '''
+    [3, 3, 3, ...] where len(answer) == 333
+    '''
