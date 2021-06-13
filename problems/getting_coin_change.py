@@ -1,3 +1,12 @@
+############------------ IMPORTS ------------############
+import sys
+
+
+############------------ GLOBAL VARIABLES ------------############
+recursion_limit = sys.getrecursionlimit()
+print(recursion_limit)
+
+
 ############------------ FUNCTIONS ------------############
 def change(amount):
     '''
@@ -53,18 +62,18 @@ def test_case_4():
 
 ############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
-    test_case_1()
+    # test_case_1()
     # [3, 5, 3]
 
-    test_case_2()
+    # test_case_2()
     '''
     [3, 3, 3, ...] where len(answer) == 333
     '''
 
-    test_case_3()
+    # test_case_3()
     # Something went wrong
 
-    test_case_4()
+    # test_case_4()
     # Something went wrong
 
     
