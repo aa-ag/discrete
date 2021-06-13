@@ -36,6 +36,21 @@ def test_case_2():
         print("Something went wrong")
 
 
+def test_case_3():
+    n =  5
+    try:
+        print(change(n))
+    except:
+        print("Something went wrong")
+
+
+def test_case_4():
+    n =  10000
+    try:
+        print(change(n))
+    except:
+        print("Something went wrong")
+
 ############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
     test_case_1()
@@ -45,3 +60,11 @@ if __name__ == '__main__':
     '''
     [3, 3, 3, ...] where len(answer) == 333
     '''
+
+    test_case_3()
+    # Something went wrong
+
+    test_case_4()
+    # Something went wrong
+
+    
