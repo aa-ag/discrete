@@ -6,6 +6,10 @@ def change(amount):
         return [5, 5, 5, 5, 5]
     if amount == 26:
         return [5, 7, 7, 7]
+    if amount == 27:
+        return [5, 5, 5, 5, 7]
+    if amount == 28:
+        return [7, 7, 7, 7]
 
     coins = change(amount - 5)
     coins.append(5)
