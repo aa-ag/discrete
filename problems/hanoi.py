@@ -18,4 +18,5 @@ def towers(n, from_tower, to_tower, spare_tower):
 
 ############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
-    pass
+    towers(1, 'a', 'b', 'c')
+    # move a to b
