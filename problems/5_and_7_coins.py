@@ -25,7 +25,7 @@ def test_case_1():
 
 
 def test_case_2():
-    amount =  220
+    amount =  54
     try:
         print(change(amount))
     except:
