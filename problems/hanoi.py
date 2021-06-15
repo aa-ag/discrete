@@ -4,19 +4,33 @@ def print_move(from_tower, to_tower):
     print(f"move {str(from_tower)} to {str(to_tower)}")
 
 def towers(n, from_tower, to_tower, spare_tower):
-    # assert that there is more than zero rings 
-    assert(n > 0)
+    try:
+        # assert that there is more than zero rings 
+        assert(n > 0)
 
-    # base case
-    if n == 1:
-        print_move(from_tower, to_tower)
-    else:
-        towers(n - 1, from_tower, to_tower, spare_tower)
-        towers(1, from_tower, to_tower, spare_tower)
-        towers(n - 1, spare_tower, to_tower, from_tower)
+        # base case
+        if n == 1:
+            print_move(from_tower, to_tower)
+        else:
+            towers(n - 1, from_tower, to_tower, spare_tower)
+            towers(1, from_tower, to_tower, spare_tower)
+            towers(n - 1, spare_tower, to_tower, from_tower)
+    
+    except AssertionError:
+        print('"N" must be greater than zero.')
 
 
 ############------------ DRIVER CODE ------------############
+def test_case_1():
+    return towers(1, 'a', 'b', 'c')
+
+def test_case_2():
+    return towers(-3, 'a', 'b', 'c')
+
+############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
-    towers(1, 'a', 'b', 'c')
+    test_case_1()
     # move a to b
+
+    test_case_2()
+    # "N" must be greater than zero.
