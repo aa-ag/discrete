@@ -27,6 +27,9 @@ def test_case_1():
 def test_case_2():
     return towers(-3, 'a', 'b', 'c')
 
+def test_case_3():
+    return towers(3, 'a', 'b', 'c')
+
 ############------------ DRIVER CODE ------------############
 if __name__ == '__main__':
     test_case_1()
@@ -34,3 +37,14 @@ if __name__ == '__main__':
 
     test_case_2()
     # "N" must be greater than zero.
+
+    test_case_3()
+    '''
+     move a to b
+     move a to b
+     move c to b
+     move a to b
+     move c to b
+     move c to b
+     move a to b
+    '''
