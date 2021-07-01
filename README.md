@@ -1,5 +1,5 @@
-# Discrete Math for CS
+# Javascript @ Udacity
 
-Taking [Introduction to Discrete Mathematics for Computer Science Specialization](https://www.coursera.org/specializations/discrete-mathematics).  
+Repurposing this repo to follow along Udacity's Javascript class(es), in the following order:
 
-Syllabus looks very promising, and instructor has provided several useful [scripts](https://github.com/alexanderskulikov/discrete-math-python-scripts).
+- [Intro to JavaScript](https://www.udacity.com/course/intro-to-javascript--ud803)
