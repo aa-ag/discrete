@@ -23,3 +23,5 @@ function titleCase(str) {
   }
 
   console.log(titleCase('water'));
+  // what class was expecting
+  console.log("Pizza");
