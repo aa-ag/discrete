@@ -14,6 +14,8 @@ console.log(quote[6]);
  * 3. Your code must have a `console.log()` function
  * 4. Your code should not be empty
  */
+let str = 'pizza'
+
 function titleCase(str) {
     str = str.toLowerCase().split(' ');
     for (var i = 0; i < str.length; i++) {
@@ -22,6 +24,6 @@ function titleCase(str) {
     return str.join(' ');
   }
 
-  console.log(titleCase('water'));
-  // what class was expecting
-  console.log("Pizza");
+  // console.log(titleCase('water'));
+  // // what class was expecting
+  // console.log("Pizza");
