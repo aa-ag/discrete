@@ -31,12 +31,5 @@ if (1) {
 
 // Ternary operator
 var isGoing = true;
-var color;
-
-if (isGoing) {
-  color = "green";
-} else {
-  color = "red";
-}
-
+var color = isGoing ? "green" : "red";
 console.log(color);
