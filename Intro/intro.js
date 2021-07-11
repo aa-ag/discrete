@@ -16,7 +16,6 @@ document.body.addEventListener('click', function () {
 });
 
 // Falsy
-
 if ("") {
   console.log("the value is truthy");
 } else {
@@ -29,3 +28,15 @@ if (1) {
 } else {
   console.log("the value is falsy");
 }
+
+// Ternary operator
+var isGoing = true;
+var color;
+
+if (isGoing) {
+  color = "green";
+} else {
+  color = "red";
+}
+
+console.log(color);
