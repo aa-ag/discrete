@@ -14,3 +14,11 @@ document.body.addEventListener('click', function () {
     myParent.appendChild(myImage);
     myImage.style.marginLeft = "160px";
 });
+
+// Falsy
+
+if ("") {
+  console.log("the value is truthy");
+} else {
+    console.log("the value is falsy");
+}
