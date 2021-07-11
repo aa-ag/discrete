@@ -7,7 +7,13 @@
  *   - shirtSleeve
  *
  * Use the chart above to print out one of the following correct values:
- *   - S, M, L, XL, 2XL, or 3XL
+ Size	Width	Length	Sleeve
+  S	    18"	    28"	    8.13"
+  M	    20"	    29"	    8.38"
+  L	    22"	    30"	    8.63"
+  XL	24"	    31"	    8.88"
+  2XL	26"	    33"	    9.63"
+  3XL	28"	    34"	    10.13"
  */
 
 /*
