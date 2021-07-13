@@ -34,6 +34,6 @@ var eatsAnimals = true;
  */
 
 /* conditional ? (if condition is true) : (if condition is false) */
-var category = 'omnivore' ? (eatsPlants === true && eatsAnimals === true) : 'carnivore' ? (eatsPlants === false && eatsAnimals === true) : 'herbivore' ? (eatsPlants === true && eatsAnimals === false) : 'undefined';
+var category = eatsPlants ? (eatsAnimals ? "omnivore" : "herbivore") : (eatsAnimals ? "carnivore" : "undefined");
 
 console.log(category);
