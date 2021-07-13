@@ -33,6 +33,6 @@ var eatsAnimals = true;
  * - (false, false, undefined)
  */
 
-var category = /* your code goes here */
+var category = /* conditional ? (if condition is true) : (if condition is false) */
 
 console.log(category);
