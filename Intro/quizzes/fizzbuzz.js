@@ -13,17 +13,22 @@
  * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
  */
  
+
 var x = 1;
 
-while (x < 21) {
-    if (x % 3 === 0) {
-        console.log("Julia") 
-    } else if (x % 5 === 0) {
-        console.log("James") 
-    } else if (x % 3 === 0 && x % 5 === 0) {
-        console.log("JuliaJames")
-    } else {
-        console.log(x)
+// while loop with a stop condition
+while (x <= 20) {
+    if (x % 3 === 0 && x % 5 === 0) {
+        console.log("JuliaJames");
+    }else if (x % 5 === 0) {
+        console.log("James");
+    }else if (x % 3 === 0) {
+        console.log("Julia");
     }
-    x = x + 1 ;
+    else {
+        console.log(x);
+    }
+    // increment x at the end of each loop
+    x = x + 1 ; 
 }
+
