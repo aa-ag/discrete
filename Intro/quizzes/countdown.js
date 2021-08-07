@@ -44,7 +44,7 @@ while (t >= 0) {
         console.log("Solid rocket booster ignition and liftoff!")
         t -= 1
     } else {
-        console.log(t)
+        console.log("T-" + t + " seconds")
         t -= 1
     }
 }
