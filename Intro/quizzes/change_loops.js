@@ -19,9 +19,6 @@ while (x >= 1) {
     x = x - 1;
 }
 
-
-var x = 9;
-while (x >= 1) {
-  console.log("hello " + x);
-  x = x - 1;
+for (var x = 9; x > 0; x = x - 1) {
+    console.log("Printing out x = " + x);
 }
